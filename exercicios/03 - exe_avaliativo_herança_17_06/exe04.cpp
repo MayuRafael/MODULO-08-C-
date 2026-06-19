@@ -51,21 +51,18 @@ public:
 };
 
 int main() {
-    
-    //objetos
-    // SeteConsoleOutputCP(CP_UTF8);
-    // SeteConsoleCP(CP_UTF8),
-    // SeteLocale(LC_ALL, "UTF*");
-    
-   
-    
+    // Configura o console para UTF-8
+    SetConsoleOutputCP(CP_UTF8);
+    SetConsoleCP(CP_UTF8);
+
+    // Configura a localização para português
+    setlocale(LC_ALL, "pt_BR.UTF-8");
 
     Livro l1("O Senhor dos Anéis", 59.90, "J.R.R. Tolkien");
     Livro l2("Dom Casmurro", 39.90, "Machado de Assis");
 
     Eletronico e1("Smartphone", 1999.00, "Samsung");
     Eletronico e2("Notebook", 3500.00, "Dell");
-
 
     l1.mostrarInfo();
     l2.mostrarInfo();
